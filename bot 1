@@ -1,0 +1,24 @@
+import pyautogui
+import time
+time.sleep(5)
+n = 0
+lonjitud_de_la_cadena = 18
+h = ['ban dai', 'jajajajajjajajajjjajjjjajajajajajja', 'no sapos ', 'el one pice es la amistad ', 'tenias que entregar para ayer la ficha de fol ', 'me comeis la polla', 'gibraltar español', 'joder', 'vfndlvk', 'ssshgbf', 'sosageyo', 'aaaaaaaaaaaaaaaaaaaaa', 'VIVA EL BETIS', 'LA COPA DE ESPAÑA LA GANARA EL SABADELL', 'NBHBSBSFG','al final en atac on tital muere ...', 'no amigo no soy tan cabron']
+tiempo_de_espera_entre_palabras = 2
+repeticion_de_cada_palabra = 4
+
+
+while True :
+    for i in range(repeticion_de_cada_palabra):
+        pyautogui.typewrite(h[n])
+        pyautogui.press("enter")
+        time.sleep(tiempo_de_espera_entre_palabras)
+
+    if n == lonjitud_de_la_cadena:
+        n = 0
+    else:
+        n = n + 1
+
+
+
+
